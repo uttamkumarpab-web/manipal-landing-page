@@ -66,7 +66,7 @@ export default function CoursesSection({ onApply }: { onApply: () => void }) {
                 ENQUIRE NOW
               </button>
               <button
-                onClick={() => (window.location.href = "/")}
+                onClick={onApply}
                 className="text-[#0C1446] font-semibold hover:text-[#F15A29] transition"
               >
                 VIEW COURSE &gt;

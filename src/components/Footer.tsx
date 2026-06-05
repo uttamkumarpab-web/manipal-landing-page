@@ -22,7 +22,7 @@ export default function Footer() {
         </p>
 
           <p className="text-sm mt-4">
-  © {new Date().getFullYear()} https://onlinedegree-manipal.co.in/ | All rights reserved
+  © {new Date().getFullYear()} https://mbaonlineinfo.com/ | All rights reserved
 </p>
 
 <div className="mt-2 flex justify-center gap-6">
