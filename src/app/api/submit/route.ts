@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
-import { prisma } from "@/lib/prisma";
+import { supabase } from "@/lib/supabase";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -21,9 +21,16 @@ export async function POST(request: Request) {
       );
     }
 
-    await prisma.lead.create({
-      data: { name, email, contactno, selectcourse, state },
+    const { error: dbError } = await supabase.from("lead").insert({
+      id: crypto.randomUUID(),
+      name,
+      email,
+      contactno,
+      selectcourse,
+      state,
     });
+
+    if (dbError) throw dbError;
 
     await resend.emails.send({
       from: "Manipal <onboarding@resend.dev>",
