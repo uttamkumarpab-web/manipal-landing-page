@@ -33,7 +33,7 @@ export async function POST(request: Request) {
     if (dbError) throw dbError;
 
     await resend.emails.send({
-      from: "Manipal <onboarding@resend.dev>",
+      from: "Manipal <noreply@mbaonlineinfo.com>",
       to: email,
       subject: "Thank you for your inquiry",
       html: `
@@ -41,7 +41,22 @@ export async function POST(request: Request) {
         <p>We have received your inquiry regarding <strong>${selectcourse}</strong>.</p>
         <p>Our team will get back to you at <strong>${email}</strong> or <strong>${contactno}</strong> shortly.</p>
         <br/>
-        <p>Best regards,<br/>Manipal Admissions Team</p>
+      `,
+    });
+
+    await resend.emails.send({
+      from: "Manipal <noreply@mbaonlineinfo.com>",
+      to: "noreply@mbaonlineinfo.com",
+      subject: `New inquiry: ${name} - ${selectcourse}`,
+      html: `
+        <h2>New Lead Submission</h2>
+        <table style="border-collapse:collapse;width:100%">
+          <tr><td style="padding:8px;font-weight:bold">Name:</td><td style="padding:8px">${name}</td></tr>
+          <tr><td style="padding:8px;font-weight:bold">Email:</td><td style="padding:8px">${email}</td></tr>
+          <tr><td style="padding:8px;font-weight:bold">Phone:</td><td style="padding:8px">${contactno}</td></tr>
+          <tr><td style="padding:8px;font-weight:bold">Course:</td><td style="padding:8px">${selectcourse}</td></tr>
+          <tr><td style="padding:8px;font-weight:bold">State:</td><td style="padding:8px">${state}</td></tr>
+        </table>
       `,
     });
 
