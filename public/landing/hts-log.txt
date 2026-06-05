@@ -1,0 +1,34 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 04 Jun 2026 13:48:45 at https://degree-admission.co.in/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qiC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://degree-admission.co.in/ -O1 "C:\manipal\Manipal Landing Page" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+13:51:24	Error: 	"Not Found" (404) at link https://degree-admission.co.in/signals/config/ (from https://connect.facebook.net/en_US/fbevents.js)
+13:51:24	Error: 	"Not Found" (404) at link https://degree-admission.co.in/t (from https://connect.facebook.net/en_US/fbevents.js)
+13:51:24	Error: 	"Not Found" (404) at link https://degree-admission.co.in/e (from https://connect.facebook.net/en_US/fbevents.js)
+13:51:24	Error: 	"Not Found" (404) at link https://degree-admission.co.in/signals/plugins/ (from https://connect.facebook.net/en_US/fbevents.js)
+13:51:24	Error: 	"Not Found" (404) at link https://degree-admission.co.in/schema.org/ (from https://connect.facebook.net/en_US/fbevents.js)
+13:51:24	Error: 	"Not Found" (404) at link https://degree-admission.co.in/t.resolvedLink (from https://connect.facebook.net/en_US/fbevents.js)
+13:51:24	Error: 	"Not Found" (404) at link https://degree-admission.co.in/o (from https://connect.facebook.net/en_US/fbevents.js)
+13:51:24	Error: 	"Not Found" (404) at link https://degree-admission.co.in/signals/iwl.js (from https://connect.facebook.net/en_US/fbevents.js)
+13:51:24	Error: 	"Not Found" (404) at link https://degree-admission.co.in/signals/iwl.js?pixel_id= (from https://connect.facebook.net/en_US/fbevents.js)
+13:51:24	Error: 	"Not Found" (404) at link https://degree-admission.co.in/n.dl (from https://connect.facebook.net/en_US/fbevents.js)
+13:51:24	Error: 	"Not Found" (404) at link https://degree-admission.co.in/n.rl (from https://connect.facebook.net/en_US/fbevents.js)
+13:51:24	Error: 	"Not Found" (404) at link https://degree-admission.co.in/favicon.webp (from https://degree-admission.co.in/privacy-policy)
+13:51:24	Error: 	"Not Found" (404) at link https://degree-admission.co.in/css/bootstrap.min.css (from https://degree-admission.co.in/privacy-policy)
+13:51:24	Error: 	"Not Found" (404) at link https://degree-admission.co.in/css/reset.css (from https://degree-admission.co.in/privacy-policy)
+13:51:24	Error: 	"Not Found" (404) at link https://degree-admission.co.in/css/style.css (from https://degree-admission.co.in/privacy-policy)
+13:51:24	Error: 	"Not Found" (404) at link https://degree-admission.co.in/css/responsive.css (from https://degree-admission.co.in/privacy-policy)
+13:51:24	Error: 	"Not Found" (404) at link https://degree-admission.co.in/css/owl.carousel.min.css (from https://degree-admission.co.in/privacy-policy)
+13:51:24	Error: 	"Not Found" (404) at link https://degree-admission.co.in/css/owl.theme.default.min.css (from https://degree-admission.co.in/privacy-policy)
+13:51:24	Error: 	"Not Found" (404) at link https://degree-admission.co.in/css/animate.css (from https://degree-admission.co.in/privacy-policy)
+13:51:24	Error: 	"Not Found" (404) at link https://degree-admission.co.in/css/pro.css (from https://degree-admission.co.in/privacy-policy)
+13:51:24	Error: 	"Not Found" (404) at link https://degree-admission.co.in/js/jquery.min.js (from https://degree-admission.co.in/privacy-policy)
+13:51:24	Error: 	"Not Found" (404) at link https://degree-admission.co.in/js/axios.min.js (from https://degree-admission.co.in/privacy-policy)
+13:51:24	Error: 	"Not Found" (404) at link https://degree-admission.co.in/info@degree-admission.co.in (from https://degree-admission.co.in/privacy-policy)
+
+HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 39 seconds : 63 links scanned, 39 files written (2026510 bytes overall), 4 files updated [141944 bytes received at 892 bytes/sec], 433403 bytes transferred using HTTP compression in 4 files, ratio 25%, 1.5 requests per connection
+(23 errors, 0 warnings, 0 messages)

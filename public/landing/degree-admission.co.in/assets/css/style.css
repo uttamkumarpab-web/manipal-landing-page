@@ -1,0 +1,385 @@
+:root {
+  --primary-color: #ff6b35;
+  --secondary-color: #2c3e50;
+  --accent-color: #f8f9fa;
+  --text-dark: #2c3e50;
+  --text-light: #6c757d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+.contact-info {
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.btn-apply {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+}
+
+.btn-apply:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  background: url(../images/abdgrid-bg.webp);
+  color: white;
+  padding: 160px 0 35px;
+  min-height: 600px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.inquiry-form {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.inquiry-form h3 {
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.form-control {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.btn-submit {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  width: 100%;
+  font-weight: 500;
+}
+
+/* Features Section */
+.features-section {
+  padding: 25px 0;
+  background: #f8f9fa;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 20px;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+/* Rankings Section */
+.rankings-section {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--text-dark);
+}
+
+.ranking-item {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.ranking-item:hover {
+  transform: translateY(-5px);
+}
+
+.ranking-badge {
+  width: 90px;
+}
+
+/* Courses Section */
+.courses-section {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+.courses-section .nav-link {
+  color: var(--primary-color);
+}
+.courses-section .nav-link.active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.course-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-image {
+  height: 200px;
+  background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.course-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: var(--primary-color);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.course-content {
+  padding: 25px;
+}
+
+.course-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--text-dark);
+}
+
+.course-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.btn-course {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Advantage Section */
+.advantage-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+}
+
+.advantage-item {
+  text-align: center;
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  margin-bottom: 30px;
+  height: 100%;
+}
+
+.advantage-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+/* Benefits Section */
+.benefits-section {
+  padding: 80px 0;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  text-align: center;
+}
+
+.testimonial-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.testimonial-image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 20px;
+  color: var(--text-light);
+}
+
+.testimonial-author {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+/* Owl Carousel Custom Styles */
+.owl-nav button {
+  background: var(--primary-color) !important;
+  color: white !important;
+  border-radius: 50% !important;
+  width: 50px !important;
+  height: 50px !important;
+  font-size: 18px !important;
+}
+
+.owl-dots .owl-dot span {
+  background: var(--primary-color) !important;
+}
+
+.hero-student-img img {
+    width: 300px;
+    bottom: -35px;
+    right: -40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content h5 {
+    font-size: 16px;
+  }
+
+  .hero-content button {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .approveLogo img {
+    width: 50px;
+  }
+
+  .approveLogo h5 {
+    font-size: 12px;
+  }
+
+  .hero-section {
+    padding: 80px 0;
+
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .logo img {
+    width: 130px;
+  }
+
+  .inquiry-form {
+    padding: 15px;
+    border-radius: 12px;
+  }
+  .inquiry-form h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+  .inquiry-form p {
+    font-size: 12px;
+  }
+
+  .feature-item {
+    padding: 0px;
+}
+
+.feature-item h5 {
+    font-size: 16px;
+}
+
+.feature-item p {
+    font-size: 14px;
+}
+
+.feature-icon {
+    font-size: 1.5rem;
+}
+
+.rankings-section, .courses-section, .advantage-section, .benefits-section, .testimonials-section {
+    padding: 45px 0;
+}
+
+.benefit-item {
+    flex-direction: column;
+}
+
+.testimonial-card {
+    padding: 10px;
+    margin: 0px;
+}
+
+}
