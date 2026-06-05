@@ -21,7 +21,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const { error: dbError } = await supabase.from("lead").insert({
+    const { error: dbError } = await supabase.from("Lead").insert({
       id: crypto.randomUUID(),
       name,
       email,
