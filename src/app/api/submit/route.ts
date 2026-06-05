@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
-import { supabase } from "@/lib/supabase";
+import { supabaseAdmin } from "@/lib/supabase";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -21,7 +21,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const { error: dbError } = await supabase.from("Lead").insert({
+    const { error: dbError } = await supabaseAdmin.from("lead").insert({
       id: crypto.randomUUID(),
       name,
       email,
@@ -45,8 +45,7 @@ export async function POST(request: Request) {
       `,
     });
 
-    const referer = request.headers.get("referer") ?? "/";
-    return NextResponse.redirect(new URL(referer));
+    return NextResponse.redirect(new URL("/thank-you", request.url));
   } catch (error) {
     console.error("Form submission error:", error);
     return NextResponse.json(
