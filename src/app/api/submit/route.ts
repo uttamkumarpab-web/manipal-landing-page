@@ -33,7 +33,7 @@ export async function POST(request: Request) {
     if (dbError) throw dbError;
 
     await resend.emails.send({
-      from: "Manipal <noreply@mbaonlineinfo.com>",
+      from: "MBA Online Info <noreply@mbaonlineinfo.com>",
       to: email,
       subject: "Thank you for your inquiry",
       html: `
@@ -45,7 +45,7 @@ export async function POST(request: Request) {
     });
 
     await resend.emails.send({
-      from: "Manipal <noreply@mbaonlineinfo.com>",
+      from: "MBA Online Info <noreply@mbaonlineinfo.com>",
       to: "noreply@mbaonlineinfo.com",
       subject: `New inquiry: ${name} - ${selectcourse}`,
       html: `
