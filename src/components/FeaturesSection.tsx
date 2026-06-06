@@ -47,7 +47,7 @@ export default function FeaturesSection() {
           {features.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl border border-gray-200 shadow-sm p-5 text-center hover:shadow-md transition"
+              className="bg-white rounded-2xl border border-gray-200 shadow-sm pt-5 px-2 text-center hover:shadow-md transition"
             >
               <div className="w-16 h-16 rounded-full bg-orange-50 flex items-center justify-center mx-auto mb-4">
                 <i

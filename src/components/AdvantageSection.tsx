@@ -33,7 +33,7 @@ export default function AdvantageSection({ onApply }: { onApply: () => void }) {
     <section className="py-10 md:py-14 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-900 mb-8">
-          Program Highlights
+          Program <span className="text-[#F15A29]">Highlights</span>
         </h2>
 
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-0">
@@ -66,9 +66,9 @@ export default function AdvantageSection({ onApply }: { onApply: () => void }) {
           ))}
         </div>
 
-         <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-900 mt-10 mb-8">
-          Our Partner Companies
-        </h2>
+         <h2 className="text-2xl md:text-4xl font-extrabold text-[#0C1446] text-center mt-10 mb-8">
+        Our <span className="text-[#F15A29]">Partner Companies</span>
+      </h2>
 
         <div className="w-full flex justify-center">
   <Image

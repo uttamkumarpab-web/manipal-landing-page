@@ -9,9 +9,9 @@ export default function BenefitsSection() {
   return (
     <section className="py-12 md:py-20">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-gray-800">
-          Online Manipal Advantages
-        </h2>
+       <h2 className="text-2xl md:text-4xl font-extrabold text-[#0C1446] text-center mb-12">
+        Online Manipal <span className="text-[#F15A29]">Advantages</span>
+      </h2>
         <div className="flex flex-wrap">
           {benefits.map((b, i) => (
             <div key={i} className="w-full md:w-1/2 px-3 mb-6">

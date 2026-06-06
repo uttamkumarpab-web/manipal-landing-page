@@ -12,20 +12,23 @@ import MobileStickyBar from "@/components/MobileStickyBar";
 import InquiryModal from "@/components/InquiryModal";
 import DegreeSection from "@/components/DegreeSection";
 import FAQSection from "@/components/FAQSection";
+import SpecializationsSection from "@/components/Specialization";
+import AdmissionProcessSection from "@/components/Admission";
 
 export default function Home() {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <>
-      <HeroSection onApply={() => setModalOpen(true)} />
-      
+      <HeroSection onApply={() => setModalOpen(true)} />      
       <RankingsSection />
+      <SpecializationsSection onApply={() => setModalOpen(true)} />
       <CoursesSection onApply={() => setModalOpen(true)} />
       <AdvantageSection onApply={() => setModalOpen(true)} />
       <BenefitsSection />
       <DegreeSection onApply={() => setModalOpen(true)} />
       <FeaturesSection />
+      <AdmissionProcessSection />
       <FAQSection />
       <Footer />
       <MobileStickyBar onApply={() => setModalOpen(true)} />

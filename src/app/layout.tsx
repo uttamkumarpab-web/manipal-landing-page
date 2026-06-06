@@ -24,6 +24,17 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <link rel="icon" href="/landing/degree-admission.co.in/assets/images/favicon.png" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18215221480" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-18215221480');
+            `,
+          }}
+        />
       </head>
       <body className="font-sans text-gray-800 antialiased" style={{ fontFamily: "Inter, sans-serif" }}>
         {children}
